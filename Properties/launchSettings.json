@@ -11,17 +11,18 @@
   "profiles": {
     "IIS Express": {
       "commandName": "IISExpress",
-      "launchBrowser": true,
+      "launchBrowser": false,
       "launchUrl": "api/produtos",
+      "applicationUrl": "http://localhost:7986",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
     "BlueModasBack": {
       "commandName": "Project",
-      "launchBrowser": true,
+      "launchBrowser": false,
       "launchUrl": "api/produtos",
-      "applicationUrl": "http://localhost:5000",
+      "applicationUrl": "http://localhost:7986",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }

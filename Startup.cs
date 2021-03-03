@@ -35,7 +35,7 @@ namespace BlueModasBack
                     builder => builder
                    .AllowAnyMethod()
                    .AllowAnyHeader()
-                   .SetIsOriginAllowed((host) => true)
+                   .SetIsOriginAllowed((origin) => true)
                    .AllowCredentials());
             });
 
@@ -57,6 +57,8 @@ namespace BlueModasBack
 
             app.UseRouting();
 
+            app.UseCors("CorsPolicy");
+
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
@@ -64,7 +66,6 @@ namespace BlueModasBack
                 endpoints.MapControllers();
             });
 
-            app.UseCors("CorsPolicy");
 
             app.UseStaticFiles();
         }
