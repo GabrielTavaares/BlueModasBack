@@ -13,6 +13,7 @@
       "commandName": "IISExpress",
       "launchBrowser": false,
       "launchUrl": "api/produtos",
+      "applicationUrl": "http://localhost:7986",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
@@ -21,7 +22,7 @@
       "commandName": "Project",
       "launchBrowser": false,
       "launchUrl": "api/produtos",
-      "applicationUrl": "http://localhost:5000",
+      "applicationUrl": "http://localhost:7986",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
